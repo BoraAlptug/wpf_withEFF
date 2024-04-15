@@ -1,0 +1,18 @@
+﻿<Window x:Class="OdemePlanı_11.UI.UserUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OdemePlanı_11.UI"
+        mc:Ignorable="d"
+        Title="UserUI" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="payPlanDetail_dgw" HorizontalAlignment="Left" Height="201" Margin="303,57,0,0" VerticalAlignment="Top" Width="376" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <TextBox x:Name="payPlanName_txt" HorizontalAlignment="Left" Height="26" Margin="303,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263"/>
+        <Button x:Name="payPlanAdd_btn" Content="Kaydet" HorizontalAlignment="Left" Height="33" Margin="303,353,0,0" VerticalAlignment="Top" Width="120" Click="payPlanAdd_btn_Click" />
+        <ListBox x:Name="payPlanPreviewList_lstbox" HorizontalAlignment="Left" Height="201" Margin="73,57,0,0" VerticalAlignment="Top" Width="167" d:ItemsSource="{d:SampleData ItemCount=5}" MouseLeftButtonUp="payPlanPreviewList_lstbox_MouseLeftButtonUp"/>
+        <Button x:Name="payPlanDelete_btn" Content="Sil" HorizontalAlignment="Left" Height="26" Margin="174,296,0,0" VerticalAlignment="Top" Width="66" Click="payPlanDelete_btn_Click" />
+        <Button x:Name="emptyPayPlan_btn" Content="Boş Plan Listesi" HorizontalAlignment="Left" Height="33" Margin="450,353,0,0" VerticalAlignment="Top" Width="127" Click="emptyPayPlan_btn_Click" />
+
+    </Grid>
+</Window>
